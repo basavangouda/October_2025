@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="9" time="0.141" timestamp="2025-10-18T20:53:42.067758+05:30" hostname="DESKTOP-4222FVV"><testcase classname="Demo3_test" name="test_sample_one" time="0.000" /><testcase classname="Demo3_test" name="test_sample_two" time="0.000" /><testcase classname="Demo3_test" name="test_sample_three" time="0.000" /><testcase classname="test_Demo1" name="test_sample_one" time="0.001"><failure message="assert 20 == 2">def test_sample_one():
+        print("Inside the sample one")
+&gt;       assert 20==2
+E       assert 20 == 2
+
+test_Demo1.py:3: AssertionError</failure></testcase><testcase classname="test_Demo1" name="test_sample_two" time="0.000" /><testcase classname="test_Demo1" name="test_sample_three" time="0.000" /><testcase classname="test_Demo2" name="test_sample_one" time="0.001" /><testcase classname="test_Demo2" name="test_sample_two" time="0.001"><failure message="AssertionError: assert False&#10; +  where False = &lt;method-wrapper '__eq__' of int object at 0x00007FFD6D991C88&gt;(100)&#10; +    where &lt;method-wrapper '__eq__' of int object at 0x00007FFD6D991C88&gt; = 200.__eq__">def test_sample_two():
+        print("Inside the sample two")
+        a=200
+&gt;       assert a.__eq__(100)
+E       AssertionError: assert False
+E        +  where False = &lt;method-wrapper '__eq__' of int object at 0x00007FFD6D991C88&gt;(100)
+E        +    where &lt;method-wrapper '__eq__' of int object at 0x00007FFD6D991C88&gt; = 200.__eq__
+
+test_Demo2.py:7: AssertionError</failure></testcase><testcase classname="test_Demo2" name="test_sample_three" time="0.000" /></testsuite></testsuites>
