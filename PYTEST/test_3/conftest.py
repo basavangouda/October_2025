@@ -3,7 +3,7 @@ import pytest
 from allure_commons.types import AttachmentType
 from selenium import webdriver
 
-
+import time
 def pytest_addoption(parser):
    parser.addoption("--browser")
 
